@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <script type="javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 id="title">Formulario de pesquisa</h1>
+            <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
+            <label for="survey-form"></label>
+            <form class="formulario-principal" id="survey-form">
+                <label for="name" placeholder="Entre com nome">Nome</label>
+                <input type="text" class="nome" id="name">
+                
+                <label for="e-mail" placeholder="Entre com email">Email</label>
+                <input type="text" class="e-mail" id="email">
+
+                <label for="idade" placeholder="Idade">Idade</label>
+                <input type="number" min="10" max="99" class="idade">
+
+                <label for="cargo">Qual opção descreve melhor seu cargo</label>
+                <select class="cargo" id="dropdown">
+                    <option value="default" selected disabled>Selecione o cargo correspondente</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho-integral">Trabalho em tempo integral</option>
+                    <option value="aprendiz">Aprendiz em tempo integral</option>
+                    <option value="nao-responder">Prefiro não responder</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="recomendacao">Você recomendaria freecodecamp para um amigo?</label>
+                <input type="radio" name="recomenda" class="recomendacao"> Definitivamente
+                <input type="radio" name="recomenda"> Talvez
+                <input type="radio" name="recomenda"> Não tenho certeza
+
+                <label for="recurso-favorito">Qual seu recurso favorito?</label>
+                <select class="recurso-favorito">
+                    <option value="default" selected disabled>Selecione uma opção</option>
+                    <option value="desafios">Desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="opensource">Open Source</option>
+                </select>
+
+                <label for="melhorias">O que você gostaria de ver melhorando</label>
+                <input type="checkbox" value="front-end" class="melhorias">Projetos front-end
+                <input type="checkbox" value="back-end" class="melhorias">Projetos back-end
+                <input type="checkbox" value="data-visualization" class="melhorias">Visualizaçã de dados
+                <input type="checkbox" value="desafios" class="melhorias">Desafios
+                <input type="checkbox" value="comunidade" class="melhorias">Comunidade Open source
+                <input type="checkbox" value="gitter" class="melhorias">Gitter help rooms
+                <input type="checkbox" value="encontros" class="melhorias">Encontros nas cidades
+                <input type="checkbox" value="wiki" class="melhorias">Wiki
+                <input type="checkbox" value="forum" class="melhorias">Forum
+                <input type="checkbox" value="cursos" class="melhorias">Cursos adicionais
+ 
+                <label for="comentarios">Algum comentário ou sugestão?</label>
+                <textarea class="comentarios" placeholder="Coloque seu comentario aqui"></textarea>
+
+                <input type="button" name="Submit" id="submit">Submit
+            </form>
+
+        </div>
+    </body>
+</html>
