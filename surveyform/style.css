@@ -1,8 +1,17 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    display: inline-block;
 }
 #survey-form{
     text-align: justify;
+    flex-wrap: wrap;
     
+
+}
+
+div{
+    justify-content: center;
+    
+
 }

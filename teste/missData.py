@@ -1,18 +1,25 @@
 import cx_Oracle
 import config
 
-connection = None
+def connect():
+    connection = None
 
-try: 
-    connection = cx_Oracle.connect(
-    config.username,
-    config.password,
-    config.dsn,
-    encoding = config.encoding)
+    try: 
+        connection = cx_Oracle.connect(
+        config.username,
+        config.password,
+        config.dsn,
+        encoding = config.encoding)
 
-    print(connection.version)
-except cx_Oracle.Error as error:
-    print(error)
+        print(connection.version)
+    except cx_Oracle.Error as error:
+        print(error)
+
+def main():
+    connect()
+    cur = connection.cursor()
+    cur.execute('query')
+
 
 
 """finally:
