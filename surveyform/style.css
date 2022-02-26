@@ -1,6 +1,6 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    justify-content: center;
     display: flex;
     justify-content: center;
 }
@@ -8,10 +8,14 @@ body{
     display: flex;
     /*flex-wrap: wrap;*/
     flex-direction: column;
-    text-align: justify;
+    text-align: start;
     align-content: space-between;
     
 
+}
+.melhorias{
+    
+    align-self: auto;
 }
 
 div{
