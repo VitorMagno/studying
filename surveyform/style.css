@@ -9,13 +9,23 @@ body{
     /*flex-wrap: wrap;*/
     flex-direction: column;
     text-align: justify;
-    align-content: space-between;
-    
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 1%;
+    background-color: rgb(233, 246, 252);
+    flex-grow: 2;
 
 }
 
+label{
+    /*padding-top: 2%;
+    padding-bottom: 2%;*/
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 div{
-    justify-content: center;
+    align-content: center;
     
     
 }

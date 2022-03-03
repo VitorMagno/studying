@@ -11,7 +11,7 @@
             <h1 id="title">Formulario de pesquisa</h1>
             <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
             <label for="survey-form"></label>
-            <form class="formulario-principal" id="survey-form">
+            <form class="formulario-principal" id="survey-form" name="pesquisa">
                 <label for="name" placeholder="Entre com nome">Nome</label>
                 <input type="text" class="nome" id="name">
                 
@@ -31,11 +31,12 @@
                     <option value="outro">Outro</option>
                 </select>
 
-                <label for="recomendacao">Você recomendaria freecodecamp para um amigo?</label>
+                <p>Você recomendaria freecodecamp para um amigo?</p>
                 <input type="radio" name="recomenda" class="recomendacao"> Definitivamente
-                <input type="radio" name="recomenda"> Talvez
-                <input type="radio" name="recomenda"> Não tenho certeza
-
+                <input type="radio" name="recomenda" class="recomendacao"> Talvez
+                <input type="radio" name="recomenda" class="recomendacao"> Não tenho certeza
+                
+                
                 <label for="recurso-favorito">Qual seu recurso favorito?</label>
                 <select class="recurso-favorito">
                     <option value="default" selected disabled>Selecione uma opção</option>
@@ -60,7 +61,7 @@
                 <label for="comentarios">Algum comentário ou sugestão?</label>
                 <textarea class="comentarios" placeholder="Coloque seu comentario aqui"></textarea>
 
-                <input type="button" name="Submit" id="submit" value="Submit">
+                <input type="button" name="Submit" id="submit" value="Submit" onsubmit= "recv()">
             </form>
 
         </div>
