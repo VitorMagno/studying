@@ -3,8 +3,7 @@
     <head>
 
         <link rel="stylesheet" href="style.css">
-        <script type="javascript" src="script.js"></script>
-        
+        <script src = "script.js" defer></script>
     </head>
     <body>
         <div>
@@ -12,16 +11,16 @@
             <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
             <label for="survey-form"></label>
             <form class="formulario-principal" id="survey-form" name="pesquisa">
-                <label for="name" placeholder="Entre com nome">Nome</label>
-                <input type="text" class="nome" id="name">
+                <p>Nome</p>
+                <input type="text" class="nome" id="name" placeholder="Junin sacanage" required>
                 
-                <label for="e-mail" placeholder="Entre com email">Email</label>
-                <input type="text" class="e-mail" id="email">
+                <p>Email</p>
+                <input type="email" class="e-mail" id="email" placeholder="Entre com email" required>
 
-                <label for="idade" placeholder="Idade">Idade</label>
-                <input type="number" min="10" max="99" class="idade">
+                <p>Idade</p>
+                <input type="number" min="10" max="99" class="idade" id="idade">
 
-                <label for="cargo">Qual opção descreve melhor seu cargo</label>
+                <p>Qual opção descreve melhor seu cargo</p>
                 <select class="cargo" id="dropdown">
                     <option value="default" selected disabled>Selecione o cargo correspondente</option>
                     <option value="estudante">Estudante</option>
@@ -32,13 +31,13 @@
                 </select>
 
                 <p>Você recomendaria freecodecamp para um amigo?</p>
-                <input type="radio" name="recomenda" class="recomendacao"> Definitivamente
-                <input type="radio" name="recomenda" class="recomendacao"> Talvez
-                <input type="radio" name="recomenda" class="recomendacao"> Não tenho certeza
+                <label> <input type="radio" name="recomenda" class="recomendacao" value="definitivamente"> Definitivamente </label>
+                <label> <input type="radio" name="recomenda" class="recomendacao" value="talvez"> Talvez </label>
+                <label> <input type="radio" name="recomenda" class="recomendacao" value="notsure"> Não tenho certeza </label>
                 
                 
-                <label for="recurso-favorito">Qual seu recurso favorito?</label>
-                <select class="recurso-favorito">
+                <p>Qual seu recurso favorito?</p>
+                <select class="recurso-favorito" id="recurso-favorito">
                     <option value="default" selected disabled>Selecione uma opção</option>
                     <option value="desafios">Desafios</option>
                     <option value="projetos">Projetos</option>
@@ -46,22 +45,31 @@
                     <option value="opensource">Open Source</option>
                 </select>
 
-                <label for="melhorias">O que você gostaria de ver melhorando</label>
-                <input type="checkbox" value="front-end" name="melhorias" class="melhorias">Projetos front-end
-                <input type="checkbox" value="back-end" name="melhorias" class="melhorias">Projetos back-end
-                <input type="checkbox" value="data-visualization" name="melhorias" class="melhorias">Visualizaçã de dados
-                <input type="checkbox" value="desafios" name="melhorias" class="melhorias">Desafios
-                <input type="checkbox" value="comunidade" name="melhorias" class="melhorias">Comunidade Open source
-                <input type="checkbox" value="gitter" name="melhorias" class="melhorias">Gitter help rooms
-                <input type="checkbox" value="encontros" name="melhorias" class="melhorias">Encontros nas cidades
-                <input type="checkbox" value="wiki" name="melhorias" class="melhorias">Wiki
-                <input type="checkbox" value="forum" name="melhorias" class="melhorias">Forum
-                <input type="checkbox" value="cursos" name="melhorias" class="melhorias">Cursos adicionais
+                <p>O que você gostaria de ver melhorando?</p>
+                <label> <input type="checkbox" value="front-end" name="melhorias" class="melhorias"> Projetos front-end </label>
+                
+                <label> <input type="checkbox" value="back-end" name="melhorias" class="melhorias"> Projetos back-end </label>
+                
+                <label> <input type="checkbox" value="data-visualization" name="melhorias" class="melhorias"> Visualização de dados </label>
+                
+                <label> <input type="checkbox" value="desafios" name="melhorias" class="melhorias"> Desafios </label>
+                
+                <label> <input type="checkbox" value="comunidade" name="melhorias" class="melhorias"> Comunidade Open source </label>
+                
+                <label> <input type="checkbox" value="gitter" name="melhorias" class="melhorias"> Gitter help rooms </label>
+                
+                <label> <input type="checkbox" value="encontros" name="melhorias" class="melhorias"> Encontros nas cidades </label>
+                
+                <label> <input type="checkbox" value="wiki" name="melhorias" class="melhorias"> Wiki </label>
+                
+                <label> <input type="checkbox" value="forum" name="melhorias" class="melhorias"> Forum </label>
+                <label> <input type="checkbox" value="cursos" name="melhorias" class="melhorias"> Cursos adicionais </label>
  
-                <label for="comentarios">Algum comentário ou sugestão?</label>
-                <textarea class="comentarios" placeholder="Coloque seu comentario aqui"></textarea>
+                <p>Algum comentário ou sugestão?</p>
+                <textarea id='comentario'class="comentarios" placeholder="Coloque seu comentario aqui"></textarea>
 
-                <input type="button" name="Submit" id="submit" value="Submit" onsubmit= "recv()">
+                <input type="button" name="Submit" id="submit" value="Submit" onclick="saveForm()">
+                <input type="reset" value="Limpar">
             </form>
 
         </div>
