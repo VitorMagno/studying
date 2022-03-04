@@ -5,3 +5,5 @@ Repositorio destinado a construir algumas paginas utilizando algumas linguagens 
 - Vue
 - Javascript
 - SQL
+- Python
+- PHP
