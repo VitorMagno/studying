@@ -11,15 +11,17 @@
             <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
             <label for="survey-form"></label>
             <form class="formulario-principal" id="survey-form" name="pesquisa">
-                <p>Nome</p>
+                
+                <label id="name-label" for="name">Nome</label>
                 <input type="text" class="nome" id="name" placeholder="Junin sacanage" required>
                 
-                <p>Email</p>
+
+                <label id="email-label" for="email">Email</label>
                 <input type="email" class="e-mail" id="email" placeholder="Entre com email" required>
-
-                <p>Idade</p>
-                <input type="number" min="10" max="99" class="idade" id="idade">
-
+                
+                <label id="number-label" for="number">Idade </label>
+                <input type="number" min="10" max="99" class="idade" id="number" placeholder="Digite idade de 10 a 99">
+               
                 <p>Qual opção descreve melhor seu cargo</p>
                 <select class="cargo" id="dropdown">
                     <option value="default" selected disabled>Selecione o cargo correspondente</option>
@@ -68,8 +70,8 @@
                 <p>Algum comentário ou sugestão?</p>
                 <textarea id='comentario'class="comentarios" placeholder="Coloque seu comentario aqui"></textarea>
 
-                <input type="button" name="Submit" id="submit" value="Submit" onclick="saveForm()">
-                <input type="reset" value="Limpar">
+                <input type="submit" name="Submit" id="submit" value="Submit" onclick="saveForm()">
+                
             </form>
 
         </div>

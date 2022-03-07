@@ -67,6 +67,7 @@ const saveForm = () => {
         
         createForm(form);
         console.log ("formulario salvo");
+        alert("Formulário salvo");
     }
 }
 //algoritmo para o radiobuttons

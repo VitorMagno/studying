@@ -6,6 +6,7 @@ body{
     color: rgb(201, 250, 243);
     background-image: url(/surveyform/assets/background.jpg);
     background-size: cover;
+    background-color: burlywood;
 }
 #survey-form{
     display: flex;
