@@ -1,0 +1,32 @@
+body{
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(216, 219, 219, 0.856);
+    width: 99%;
+    height: 10%;
+    box-shadow:  2px 2px 2px 1px rgba(211, 210, 210, 0.87);
+}
+#header-img{
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color:black;  
+}
