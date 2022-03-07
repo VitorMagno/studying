@@ -1,32 +1,89 @@
-body{
-    font-family: 'Segoe UI';
+#form {
     display: flex;
     flex-direction: column;
 }
-header{
-    display: flex;
-    justify-content: space-between;
+#header{
     position: fixed;
-    background-color: rgba(216, 219, 219, 0.856);
-    width: 99%;
-    height: 10%;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
     box-shadow:  2px 2px 2px 1px rgba(211, 210, 210, 0.87);
-}
-#header-img{
-    display: flex;
-    justify-content: flex-start;
 }
 
 nav{
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
 }
-.nav-link{
+a {
+    color: #000000;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 20px;
-}
-a{
     text-decoration: none;
-    color:black;  
+
 }
+
+body{
+    font-family: 'Segoe UI';
+    
+}
+
+#main{
+    margin-top:50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    align-items: center;
+}
+
+h1{
+    font-size:large;
+
+}
+footer {
+    background-color: rgb(199, 197, 197);
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+
+}
+.offers{
+    text-align: center;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 20px;
+    grid-template-columns: [first] 20% [second] 20% [third] 20% [fourthy] 20% [five];
+}
+.offer-one{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.offer-two{
+    background-color: rgb(255, 255, 255);
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+.offer-three{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.offer-title{
+    text-align: center;
+    height: 30px;
+    font-size: large;
+    font-weight: 600;
+    background-color: rgb(170, 170, 170);
+}
+
+
+
+
+
