@@ -70,10 +70,18 @@ nav{
 .boxes{
     display: flex;
     flex-direction: row;
+    place-content: center center;
 }
 .box{
     display: flex;
     flex-direction: column;
+    place-content: center center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 10px;
+    background: linear-gradient(225deg, #440073, #510089);
+    box-shadow:  -5px 5px 30px #470078,
+                 5px -5px 30px #510088;
 }
 .project{
     padding: 15px;
