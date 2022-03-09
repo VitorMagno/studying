@@ -25,6 +25,8 @@
 }
 
 #image {
+    border: 1px;
+    border-radius: 3px;;
     position: relative;
     display: block;
     align-self: center;
