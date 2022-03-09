@@ -1,0 +1,94 @@
+@media (max-width: 700px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+}
+
+p{
+    font-style: italic;
+    font-size: 30px;
+}
+h1{
+    font-size: 140px;
+}
+h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+h3{
+    font-size: 70px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Segoe UI";
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#navbar{
+    position: fixed;
+    background-color: rgb(25, 2, 109);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -8px;
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid rgb(34, 0, 34);
+    margin-left: -8px;
+
+
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(100, 0, 87);
+    margin-top: 70px;
+    margin-left: -8px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: rgba(250, 235, 215, 0.527);
+}
+#projects{
+    width: 100vw;
+    margin-left: -8px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 0, 121);
+    color: rgba(240, 248, 255, 0.521);
+}
+.box{
+    display: inline-flex;
+}
+.project{
+    padding: 15px;
+    border: none;
+}
+#contact{
+    width: 100vw;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(25, 2, 109);
+    color: rgba(240, 248, 255, 0.5);
+}
+a{  
+    margin-right: 20px;
+    padding: 20px;
+    text-decoration: solid;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.514);
+}

@@ -1,0 +1,67 @@
+#main {
+    text-align: center;
+    color:hsla(0, 0%, 36%, 1) ;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgba(102, 96, 96, 0.966);
+    border-radius: 10px;
+
+}
+
+#title {
+    position: relative;
+    font-family: 'Average Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+#subtitle {
+    font-family: 'Avarage sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    
+}
+
+#image {
+    position: relative;
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+#img-caption {
+    font-family: 'Avarage sans', sans-serif;
+}
+#tribute-info {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    text-align: justify;
+    text-justify: auto;
+    font-family: 'Avarage sans', sans-serif;
+}
+ul {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+li {
+    padding: 1%;
+}
+#phrasis {
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    margin-left: 40%;
+
+}
+
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
