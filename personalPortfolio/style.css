@@ -6,6 +6,11 @@
     }
 }
 
+img{
+    width: 400px;
+    height: auto; 
+}
+
 p{
     font-style: italic;
     font-size: 30px;
