@@ -22,7 +22,8 @@ nav{
     margin-left: 850px;
 }
 a {
-    color: #000000;
+    font-weight:700;
+    color: #000000a8;
     padding-left: 60px;
     padding-right: 30px;
     text-decoration: none;
